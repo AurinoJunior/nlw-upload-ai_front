@@ -1,4 +1,4 @@
-import { Github, Video, Upload, Wand2 } from "lucide-react";
+import { Github, Wand2 } from "lucide-react";
 import { Button } from "./components/ui/button";
 import { Separator } from "./components/ui/separator";
 import { Textarea } from "./components/ui/textarea";
@@ -11,6 +11,7 @@ import {
   SelectValue,
 } from "./components/ui/select";
 import { Slider } from "./components/ui/slider";
+import { VideoInputForm } from "./components/video-input-form";
 
 export function App() {
   return (
@@ -54,39 +55,7 @@ export function App() {
         </div>
 
         <aside className="w-80 space-y-6">
-          <form className="space-y-4">
-            <label
-              className="border rounded-md aspect-video cursor-pointer border-dashed text-sm flex flex-col gap-2 items-center justify-center text-muted-foreground hover:bg-primary/5"
-              htmlFor="video"
-            >
-              <Video className="w-4 h-4" />
-              Selecione um video
-            </label>
-            <input
-              className="sr-only"
-              type="file"
-              name="video"
-              id="video"
-              accept="video/mp4"
-            />
-
-            <Separator />
-
-            <div className="space-y-2">
-              <Label htmlFor="transcription_promp">Prompt de transcrição</Label>
-              <Textarea
-                id="transcription_prompt"
-                className="h-20 leading-relaxed resize-none"
-                placeholder="Inclua palavras-chave mencionadas no video separadas por virgula (,)"
-              />
-            </div>
-
-            <Button type="submit" className="w-full">
-              Carregar video
-              <Upload className="w-4 h-4 ml-2" />
-            </Button>
-          </form>
-
+          <VideoInputForm />
           <Separator />
 
           <form className="space-y-4">
