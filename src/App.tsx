@@ -87,7 +87,7 @@ export function App() {
 
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div className="space-y-2">
-              <Label>Prompt</Label>
+              <Label>Template</Label>
               <PromptSelect onPromptSelected={setInput} />
             </div>
 

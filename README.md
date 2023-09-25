@@ -1,5 +1,5 @@
 <div align="center">
-   <h3>Upload AI</h3>
+   <h3>Upload AI | Frontend</h3>
 </div>
 
 <p align="center">
@@ -16,6 +16,7 @@
 - [Contexto](#blue_book-contexto)
 - [Tecnologias](#computer-tecnologias)
 - [Iniciando o projeto](#video_game-iniciando-o-projeto)
+- [Como usar](#beers-como-usar)
 - [Licença](#page_with_curl-licença)
 
 ## :blue_book: Contexto
@@ -35,6 +36,16 @@ Upload AI é uma aplicação que possibilita realizar upload de videos e por mei
 1. Intale as dependencia usando ´pnpm install´
 2. Suba o servidor usando ´pnpm run dev´
 3. O projeto estará disponivel no browser no endereço http://localhost:5173/
+
+## :beers: Como usar
+
+1. Após iniciar a aplicação, selecione um video.
+2. Digite no prompt palavras chaves ditas no video.
+3. Clique em ´Carregar video´ e espera o processo ser concluido.
+4. Selecione um template, para descrição ou titulo.
+5. Defina o nivel da temperatura.
+6. Clique em temperatura.
+7. Espere a magica acontecer.
 
 ## :page_with_curl: Licença
 
